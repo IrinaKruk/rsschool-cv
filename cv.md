@@ -1,6 +1,6 @@
 Irina Kruk
 ========================
-My contact:
+My contact
 ========================
 + Discord: IraKruk#6944
 + Phone: +375(29)767-70-74
