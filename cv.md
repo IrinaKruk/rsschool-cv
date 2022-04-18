@@ -6,7 +6,7 @@ My contact
 + Discord: IraKruk#6944
 + Phone: +375(29)767-70-74
 + Telegram: Iryna
-+ E-mail: fatum07@gmail.com
++ E-mail: fatum2807@gmail.com
 
 About me:
 ========================
