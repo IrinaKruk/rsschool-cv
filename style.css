@@ -18,7 +18,7 @@ flex-direction: column;
 justify-content: space-between;
 }
 
-header {
+header,footer {
 background: #FFFACD;
 margin:0;
 padding: 25px;
@@ -27,42 +27,39 @@ padding: 25px;
 .container {
    max-width: 1440px;
    margin: 0 auto;
+   overflow: hidden;
 }
 
 .header-container{
 display: flex;
+justify-content: space-around;
 text-transform: uppercase;
 }
 
 .header-foto {
 display: flex;
-justify-content: space-around;
-width: 30%;
+width: 20%;
 height: 100%;
-
+overflow: hidden;
 }
 
 .header-content{
-width: 70%;
+width: 80%;
 display: flex;
 flex-direction: column;
+justify-content: flex-start;
 font-size: 16px;
 }
 
 .photokruk {
-max-height:300px;
+width: 100%;
+
 }
 
 .job{
 font-size: 2em;
 margin: 0;
 padding: 0;
-}
-
-.header-content{
-display: flex;
-flex-direction: column;
-justify-content: space-around;
 }
 
 .header-menu{
@@ -74,6 +71,7 @@ background: #FFD700;
 .nav-list{
 display: flex;  
 justify-content: space-around;
+flex-wrap: wrap;
 }
 
 li {
@@ -90,9 +88,17 @@ a{
 text-decoration: none;
 color: black;
 font-weight: bold;
+display: block;
 }
 
-p {
+a:hover{
+text-decoration: underline;
+transform: scale(1.2);
+z-index: 1;
+transition: transform .5s;
+}
+
+.job {
    animation-duration: 1s;
    animation-name: slidein;
    text-align: center;
@@ -116,4 +122,35 @@ display: flex;
 flex-direction: column;
 justify-content: center;
 background: #FFD700;
+margin-top: 30px;
+}
+
+.footer-container{
+display: flex;
+height: 70px;
+justify-content: space-around;
+background: #FFD700;
+}
+
+.footer-item{
+display: flex;
+align-items: center;
+}
+
+.footer-image{
+   height: 40px;
+}
+
+img {
+   border-style: none;
+}
+
+img:hover{
+   transform: scale(1.1);
+   z-index: 1;
+   transition: transform .2s;
+   }
+
+.footer-text{
+font-weight: bold;
 }
