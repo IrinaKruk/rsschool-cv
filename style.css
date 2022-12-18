@@ -18,10 +18,10 @@ flex-direction: column;
 justify-content: space-between;
 }
 
-header,footer {
+header,footer,main {
 background: #FFFACD;
 margin:0;
-padding: 25px;
+padding: 0 25px 0 25px;
 }
 
 .container {
@@ -91,7 +91,7 @@ font-weight: bold;
 display: block;
 }
 
-a:hover{
+.nav-item a:hover{
 text-decoration: underline;
 transform: scale(1.2);
 z-index: 1;
@@ -103,6 +103,7 @@ transition: transform .5s;
    animation-name: slidein;
    text-align: center;
    font-weight: bold;
+   background: #FFD700;
 }
 
 @keyframes slidein {
@@ -121,8 +122,50 @@ transition: transform .5s;
 display: flex;
 flex-direction: column;
 justify-content: center;
-background: #FFD700;
 margin-top: 30px;
+}
+
+.aside{
+display: flex;
+flex-direction: column;
+justify-content: center;
+background: #FFD700;
+width: 30%;
+padding: 0 10px;
+}
+
+.contacts-item{
+font-size: 20px;
+padding-bottom: 5px;
+}
+
+.main-title{
+font-size: 30px;
+margin-bottom: 0;
+text-align: center;
+}
+
+.main-line{
+background-color: black;
+height: 2px;
+width: 100%;
+margin-bottom: 15px;
+}
+
+.education-place{
+margin-bottom: 15px;
+font-weight: bold;
+}
+
+.education-title{
+font-size: 22px;   
+margin-bottom: 15px;
+}
+
+.education-speciality{
+font-size: 18px;  
+padding-left: 20px;
+margin-bottom: 15px;
 }
 
 .footer-container{
