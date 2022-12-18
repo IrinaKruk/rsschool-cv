@@ -6,11 +6,11 @@ My contact
 + Discord: IraKruk#6944
 + Phone: +375(29)767-70-74
 + Telegram: Iryna
-+ E-mail: fatum07@gmail.com
++ E-mail: fatum2807@gmail.com
 
 About me:
 ========================
-I am 33 years old, I work as a progect engineer on telecommunication in Belarusian Railway. My work is interesting, complex and responsible. But still, in any work there is monotony and I wanted to do something else. That's why I came to this course!
+I am 34 years old, I work as a progect engineer on telecommunication in Belarusian Railway. My work is interesting, complex and responsible. But still, in any work there is monotony and I wanted to do something else. That's why I came to this course!
 
 
 ## My personal and professional qualities:
@@ -108,6 +108,8 @@ allButton.onclick = function () {
 2. IT Academy, Minsk 
    + HTML/CSS (project https://Project.irakruk.repl.co)
    + JavaScript (in the learning process)(project: https://addTaskA2.irakruk.repl.co , https://Drinkhashfunc.irakruk.repl.co) 
+   + React (in the learning process)
+   + Vue (in the learning process)
 
 ## Languages
 + Russian - native speaker

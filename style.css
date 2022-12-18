@@ -1,6 +1,5 @@
-@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@1,300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lora:wght@600&family=Open+Sans:ital,wght@1,300&display=swap');
 
-&fontFamily:"Open Sans";
 
 html, body {
 height: 100%;
@@ -9,10 +8,112 @@ padding: 0;
 min-width: 320px;
 position: relative;
 width: 100%;
+font-family: 'Lora', serif;
+font-family: 'Open Sans', sans-serif;
 }
+
+body{
+display: flex;
+flex-direction: column;
+justify-content: space-between;
+}
+
 header {
-max-width: 1920px;
-height: 174px;
-background: #FCFCFC;
+background: #FFFACD;
 margin:0;
+padding: 25px;
+}
+
+.container {
+   max-width: 1440px;
+   margin: 0 auto;
+}
+
+.header-container{
+display: flex;
+text-transform: uppercase;
+}
+
+.header-foto {
+display: flex;
+justify-content: space-around;
+width: 30%;
+height: 100%;
+
+}
+
+.header-content{
+width: 70%;
+display: flex;
+flex-direction: column;
+font-size: 16px;
+}
+
+.photokruk {
+max-height:300px;
+}
+
+.job{
+font-size: 2em;
+margin: 0;
+padding: 0;
+}
+
+.header-content{
+display: flex;
+flex-direction: column;
+justify-content: space-around;
+}
+
+.header-menu{
+display: flex;
+justify-content: center;
+background: #FFD700;
+}
+
+.nav-list{
+display: flex;  
+justify-content: space-around;
+}
+
+li {
+list-style-type: none;
+margin-right: 20px; 
+}
+
+ul {
+margin-left: 0; 
+padding-left: 0;
+}
+
+a{
+text-decoration: none;
+color: black;
+font-weight: bold;
+}
+
+p {
+   animation-duration: 1s;
+   animation-name: slidein;
+   text-align: center;
+   font-weight: bold;
+}
+
+@keyframes slidein {
+   from {
+     margin-left: 100%;
+     width: 300%;
+   }
+ 
+   to {
+     margin-left: 0%;
+     width: 100%;
+   }
+}
+
+.header-name{
+display: flex;
+flex-direction: column;
+justify-content: center;
+background: #FFD700;
 }
