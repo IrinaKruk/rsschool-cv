@@ -1,6 +1,7 @@
 .wrapper {
-   margin: 0 auto;
    max-width: 1440px;
+   margin: 0 auto;
+   overflow: hidden;
 }
 
 .header{
@@ -10,4 +11,13 @@
 
 .container{
    max-width: 1220px;
+   margin: 0 auto;
+   overflow: hidden;
 }
+
+.header-container{
+   display: flex;
+   justify-content:space-between;
+   margin: 42px 0;
+}
+
