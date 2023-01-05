@@ -1,10 +1,11 @@
 @import url('https://fonts.googleapis.com/css2?family=Inika&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Inter&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inika&display=swap');
 
 html, body {
-height: 100%;
-min-width: 320px;
-position: relative;
+   height: 100%;
+   min-width: 320px;
+   position: relative;
 }
 
 .wrapper {
@@ -45,18 +46,18 @@ position: relative;
 }
 
 .logo p{
-font-family: 'Inika', serif;
-line-height: 28px;
-font-weight: 400;
-font-size: 16px;
-color: #010201;
-margin: 0;
+   font-family: 'Inika', serif;
+   line-height: 28px;
+   font-weight: 400;
+   font-size: 16px;
+   color: #010201;
+   margin: 0;
 }
 
 .nav-list{
-display: flex;  
-justify-content: space-around;
-flex-wrap: wrap;
+   display: flex;  
+   justify-content: space-around;
+   flex-wrap: wrap;
 }
 
 .nav-item {
@@ -64,9 +65,9 @@ list-style-type: none;
 }
 
 a{
-text-decoration: none;
-color: rgba(1, 2, 1, 1);
-display: block;
+   text-decoration: none;
+   color: rgba(1, 2, 1, 1);
+   display: block;
 }
 
 ul{
@@ -74,9 +75,10 @@ ul{
 }
 
 .nav-item a:hover{
-color:rgba(224, 103, 51, 1);
-z-index: 1;
-transition: transform .5s;
+   color:rgba(224, 103, 51, 1);
+   z-index: 1;
+   transition: 0.3s;
+   cursor: pointer;
 }
 .nav-item:not(:last-child){
    padding-right: 46px;
@@ -95,21 +97,23 @@ transition: transform .5s;
 }
 
 .leafs{
-flex: 1;
-padding: 55px 0 69px 0;
-width:450px;
-height:410px;
+   flex: 1;
+   padding: 55px 0 69px 0;
+   width:450px;
+   height:410px;
 }
 
 .welcome-info{
-flex: 1;
-padding: 98px 0 94px 128px;
+   flex: 1;
+   padding: 98px 0 94px 128px;
 }
 
 .grey{
    margin: 0;
    font-size: 45px; 
    color: rgba(113, 113, 113, 1);
+   font-weight: 700;
+   letter-spacing: 1.2;
 }
 
 .green{
@@ -128,4 +132,178 @@ padding: 98px 0 94px 128px;
    font-size: 16px;
    padding: 12px 26px;
    text-align: center;
+   background-color: #EDF2EC;
+}
+
+.welcome-button:hover{
+   z-index: 1;
+   transition: 0.3s;
+   cursor: pointer;
+   color: #FFFFFF;
+   background-color:rgba(224, 103, 51, 1);
+}
+
+.about-container{
+   display: flex;
+   justify-content:space-between;
+   padding:93px 110px 19px 110px;
+   font-size: 20px;
+}
+
+.houseplant{
+   flex: 1;
+   padding-bottom: 70px;
+   text-align: right;
+}
+
+.about-info{
+   flex: 1;
+   padding: 68px 0 60px 0;
+}
+
+.about{
+   background-color: rgba(255, 255, 255, 1);
+   font-family: 'Inika', serif;
+}
+
+.green-info{
+   margin: 0;
+   font-size: 40px; 
+   color: rgba(73, 154, 24, 1);
+   font-weight: 400;
+   line-height: 52px;
+   padding: 0 140px 38px 0;
+}
+
+.orange{
+   color: rgba(224, 103, 51, 1);
+}
+
+.about-text{
+   margin: 0;
+   font-family: 'Inter', sans-serif;
+   font-weight: 400;
+   font-size: 20px;
+   line-height: 30px;
+}
+
+.service-header{
+   display: flex;
+}
+
+.service-title{
+   font-family: 'Inika';
+   font-weight: 400;
+   font-size: 40px;
+   line-height: 52px;
+   color: #499A18;
+   margin: 0;
+   width: 305px;
+}
+
+.service{
+   padding: 38px 110px 68px 110px;
+}
+
+.service-button{
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   padding-left: 142px;
+}
+
+.button-service{
+   width: 160px;
+   height: 50px;
+   border: 1px solid rgba(224, 103, 51, 1);
+   border-radius: 5px;
+   font-family: 'Inika';
+   font-style: normal;
+   font-weight: 400;
+   font-size: 20px;
+   line-height: 26px;
+   text-align: center;
+   background-color: #EDF2EC;
+   cursor: pointer;
+}
+
+.button-service:hover{
+   z-index: 1;
+   transition: 0.3s;
+   cursor: pointer;
+   color: #FFFFFF;
+   background-color:rgba(224, 103, 51, 1);
+}
+
+.service-button-items {
+   padding-right: 38px;
+}
+
+.service-container{
+   display: flex;
+   justify-content: space-between;
+   flex-wrap: wrap;
+   padding-top: 80px;
+}
+
+.service-card{
+   display: flex;
+   flex-direction: column;
+   width: 330px;
+   height: 450px;
+   border: 1px solid #E3E1D5;
+   border-radius: 20px;
+   margin-bottom: 53px;
+}
+
+.garden{
+   background: url('assets/img/first.png') no-repeat;
+}
+
+.planting{
+   background: url('assets/img/second.png') no-repeat;
+}
+
+.lawn-care{
+   background: url('assets/img/third.png') no-repeat;
+}
+
+.plantingtwo{
+   background: url('assets/img/fourth.png') no-repeat;
+}
+
+.garden-care{
+   background: url('assets/img/fifth.png') no-repeat;
+}
+
+.plantingthree{
+   background: url('assets/img/sixth.png') no-repeat;
+}
+
+.card-item{
+   width: 330px;
+   height: 350px;
+}
+
+.service-card h3{
+margin: 0;
+text-align: center;
+font-family: 'Inter';
+font-style: normal;
+font-weight: 700;
+font-size: 20px;
+line-height: 20px;
+color: #E06733;
+padding: 10px 0 12px 0;
+}
+
+.service-card p{
+   margin: 0;
+   text-align: center;
+   font-family: 'Inter';
+   font-style: normal;
+   font-weight: 400;
+   font-size: 16px;
+   line-height: 20px;
+   color: #717171;
 }
