@@ -224,6 +224,7 @@ ul{
    line-height: 26px;
    text-align: center;
    background-color: #EDF2EC;
+   color:  #E06733;
    cursor: pointer;
 }
 
@@ -315,22 +316,23 @@ padding: 10px 0 12px 0;
 .prices-container{
    display: flex;
    justify-content:space-between;
-   padding:40px 110px 115px 110px;
+   padding:35px 110px 114px 110px;
    font-size: 20px;
 }
 
 .price-content{
    display: flex;
    flex-direction: column;
-
 }
 
 .price-content h2{
+   margin: 0;
    font-family: 'Inter';
    font-style: normal;
    font-weight: 700;
    font-size: 40px;
    line-height: 48px;
+   padding-bottom: 60px;
 }
 
 .price-title{
@@ -365,6 +367,119 @@ padding: 10px 0 12px 0;
    height: 16px;
    background: url('assets/img/accordion_btn.svg') no-repeat;
    cursor: pointer;
+}
+
+.price-item:not(:last-child){
+   margin-bottom: 32px;
+}
+
+.price-text{
+   display: flex;
+   flex-direction: column;
+   align-items: flex-end;
+}
+
+.price-text img{
+width: 150px;
+height: 175px;
+padding-top: 40px;
+}
+
+.black{
+   margin: 0;
+   font-family: 'Inter';
+   font-style: normal;
+   font-weight: 700;
+   font-size: 40px;
+   line-height: 50px;
+   text-align: right;
+   color: #000000;
+   padding-bottom: 42px;
+}
+
+.price-button{
+   width: 160px;
+   height: 50px;
+   border: 1px solid rgba(224, 103, 51, 1);
+   border-radius: 5px;
+   font-family: 'Inika';
+   font-style: normal;
+   font-weight: 400;
+   font-size: 20px;
+   line-height: 26px;
+   text-align: center;
+   background-color: #FFFFFF;
+   cursor: pointer;
+   color: #E06733;
+}
+
+.price-button:hover{
+   z-index: 1;
+   transition: 0.3s;
+   cursor: pointer;
+   color: #FFFFFF;
+   background-color:rgba(224, 103, 51, 1);
+}
+
+.contacts-container{
+   display: flex;
+   justify-content: flex-start;
+   padding:53px 110px 0 110px;
+   font-size: 20px;
+}
+
+.contacts-image{
+max-width: 400px;
+max-height: 497px;
+}
+
+.contacts-contant{
+display: flex;
+flex-direction: column;
+}
+
+.contacts-contant h2{
+   align-items: flex-start;
+   margin: 0;
+   font-family: 'Inika';
+   font-style: normal;
+   font-weight: 700;
+   font-size: 40px;
+   line-height: 52px;
+   color: #499A18;
+   padding: 7px 0 0 113px;
+}
+
+.contacts-item{
+   padding: 33px 0 0 370px;
+   
+}
+.item{
+   display: flex;
+   justify-content: space-between;
+   align-items: center;
+   width: 450px;
+   height: 50px;
+   background: rgba(214, 231, 210, 1);
+
+}
+
+.contacts-item-text{
+   width: 100px;
+   height: 18px;
+   padding-left: 20px;
+   font-family: 'Inter';
+   font-style: normal;
+   font-weight: 700;
+   font-size: 20px;
+}
+
+.contacts-item-btn{
+   width: 16px;
+   height: 16px;
+   background: url('assets/img/accordion_btn.svg') no-repeat;
+   cursor: pointer;
+   padding-right: 35px;
 }
 
 .price-item:not(:last-child){
