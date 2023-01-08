@@ -488,3 +488,86 @@ flex-direction: column;
 .price-item:not(:last-child){
    margin-bottom: 32px;
 }
+
+.footer{
+   width: 100%;
+   background: #FFFFFF;
+}
+
+.footer-container{
+   display: flex;
+   justify-content: space-between;
+   align-items: center;
+   padding: 53px 110px 0 110px;
+   font-family: 'Inter';
+   font-style: normal;
+   font-weight: 400;
+   font-size: 20px;
+   color: #000000;
+}
+
+.footer-git{
+   display: flex;
+   height: 50px;
+}
+
+.git-svg{
+   width: 19px;
+   height: 50px;
+   background: url("assets/img/text.svg") no-repeat ;
+   padding-right: 20px;
+}
+
+.git-year{
+   padding-right: 20px;
+}
+
+.socialmedia{
+   display: flex;
+   flex-direction: row;
+   justify-content: space-between;
+}
+
+.rsschool{
+   padding-left: 20px;
+   height: 50px;
+}
+
+.instagram{
+   width: 32px;
+   height: 32px;
+   background: url("assets/img/instagramm.svg") no-repeat center;
+}
+
+.facebook{
+   width: 32px;
+   height: 32px;
+   margin-left: 20px;
+   background: url("assets/img/facebook.svg") no-repeat center;
+}
+
+.twitter{
+   width: 32px;
+   height: 32px;
+   margin-left: 20px;
+   background: url("assets/img/twitter.svg") no-repeat center;
+}
+
+.pinterest{
+   width: 32px;
+   height: 32px;
+   margin-left: 20px;
+   background: url("assets/img/pinterest.svg") no-repeat center;
+}
+.socialmedia-content{
+   margin: 0;
+   height: 50px;
+}
+
+ul{
+   list-style: none;
+}
+
+.socialmedia-content ul{
+   margin: 0;
+}
