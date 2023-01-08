@@ -454,6 +454,7 @@ flex-direction: column;
    padding: 33px 0 0 370px;
    
 }
+
 .item{
    display: flex;
    justify-content: space-between;
@@ -461,7 +462,8 @@ flex-direction: column;
    width: 450px;
    height: 50px;
    background: rgba(214, 231, 210, 1);
-
+   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+   border-radius: 0px;
 }
 
 .contacts-item-text{
@@ -470,8 +472,9 @@ flex-direction: column;
    padding-left: 20px;
    font-family: 'Inter';
    font-style: normal;
-   font-weight: 700;
+   font-weight: 400;
    font-size: 20px;
+   color: #717171;
 }
 
 .contacts-item-btn{
