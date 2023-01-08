@@ -41,7 +41,7 @@
          </div>
       </header>
       <main class="main container">
-         <section class="welcome">
+         <section class="welcome" id="home">
             <div class="welcome-container">
                <div class="leafs">
                   <img src="assets/img/leafs.png" alt="leafs">
@@ -55,7 +55,7 @@
                </div>
             </div>
          </section>
-         <section class="about">
+         <section class="about" id="aboutus">
             <div class="about-container">
                <div class="about-info">
                   <h2 class="green-info">We are <span class="orange">professional experienced</span> gardeners</h2>
@@ -70,7 +70,7 @@
                </div>
             </div>
          </section>
-         <section class="service">
+         <section class="service" id="service">
             <div class="service-header">
                <h2 class="service-title">Service and our projects</h2>
                <div class="service-button">
@@ -112,7 +112,7 @@
                </div>
             </div>
          </section>
-         <section class="prices">
+         <section class="prices" id="price">
             <div class="prices-container">
                <div class="price-content">
                   <h2>Prices</h2>
@@ -138,7 +138,7 @@
                </div>
             </div>
          </section>
-         <section class="contacts">
+         <section class="contacts" id="contacts">
             <div class="contacts-container">
                <div class="contacts-image">
                   <img src="assets/img/contact_woman.png" alt="contact_woman">
@@ -164,7 +164,9 @@
                   <a href="https://github.com/IrinaKruk">github</a>
                </div>
             </div>
-            <div class="rsschool">Rolling Scopes School</div>
+            <div class="rsschool">
+               <a href="https://rs.school/js-stage0/">Rolling Scopes School</a>
+            </div>
             <div class="socialmedia-content">
                <ul class="socialmedia">
                   <li class="instagram"><a href="https://www.instagram.com/"></a></li>
@@ -176,253 +178,6 @@
          </div>
       </footer>
    </div>
-
-   <!--
-   <div class="wrapper">
-      <header class="header">
-         <div class="container">
-            <div class="header-container">
-               <div class="header-foto">
-                  <img class="photokruk" src="assets/img/foto.jpg" alt="Photo IraKruk">
-               </div>
-               <div class="header-content">
-                  <nav class="header-menu">
-                     <ul class="nav-list">
-                        <li class="nav-item">
-                           <a href="#about" class="nav-link">About</a>
-                        </li>
-                        <li class="nav-item">
-                           <a href="#contacts" class="nav-link">Contacts</a>
-                        </li>
-                        <li class="nav-item">
-                           <a href="#skills" class="nav-link">Skills</a>
-                        </li>
-                        <li class="nav-item">
-                           <a href="#education" class="nav-link">Education</a>
-                        </li>
-                        <li class="nav-item">
-                           <a href="#languages" class="nav-link">Languages</a>
-                        </li>
-                        <li class="nav-item">
-                           <a href="#code" class="nav-link">Code</a>
-                        </li>
-                        <li class="nav-item">
-                           <a href="#project" class="nav-link">Project</a>
-                        </li>
-                     </ul>
-                  </nav>
-                  <div class="header-name">
-                     <p class="job">Irina Kruk</p>
-                  </div>
-                  <div class="header-name">
-                     <p class="job">Junior Frontend Developer</p>
-                  </div>
-               </div>
-            </div>
-         </div>
-      </header>
-      <main class="main">
-         <div class="container">
-            <div class="main-container">
-               <aside class="aside">
-                  <section class="contacts" id="contacts">
-                     <h2 class="main-title">Contacts</h2>
-                     <div class="main-line"></div>
-                     <ul class="contacts-list">
-                        <li class="contacts-item">
-                           <a href="tel:+375297677074" class="contacts-link" target="_blank">Phone:+375297677074</a>
-                        </li>
-                        <li class="contacts-item">
-                           <a href="mailto:fatum2807@gmail.com" class="contacts-link"
-                              target="_blank">E-mail:fatum2807@gmail.com</a>
-                        </li>
-                        <li class="contacts-item">
-                           <a href="https://t.me/fatum2807" class="contacts-link"
-                              target="_blank">Telegram:https://t.me/fatum2807</a>
-                        </li>
-                        <li class="contacts-item">
-                           <a href="https://discord.com/" class="contacts-link" target="_blank">Discord:
-                              IraKruk#6944</a>
-                        </li>
-                     </ul>
-                  </section>
-                  <section class="education" id="education">
-                     <h2 class="main-title">Education</h2>
-                     <div class="main-line"></div>
-                     <div class="education-place">
-                        <div class="education-title">
-                           Belarusian State University of Informatics and Radioelectronics (BSUIR)
-                        </div>
-                        <div class="education-speciality">
-                           Telecommunication systems
-                        </div>
-                     </div>
-                     <div class="education-place">
-                        <div class="education-title">
-                           RS School
-                        </div>
-                        <div class="education-speciality">
-                           <a href="https://rs.school/js-stage0/" class="education-link" target="_blank">
-                              JavaScript/Front-end. Stage 0
-                           </a>
-                        </div>
-                        <div class="education-place">
-                           <div class="education-title">
-                              IT Academy, Minsk
-                           </div>
-                           <div class="education-speciality">
-                              HTML/CSS
-                           </div>
-                           <div class="education-speciality">
-                              JavaScript
-                           </div>
-                        </div>
-                     </div>
-                  </section>
-                  <section class="skills" id="skills">
-                     <h2 class="main-title">Skills</h2>
-                     <div class="main-line"></div>
-                     <nav class="skills-title">
-                        <ul>
-                           <li class="skills-item">
-                              HTML
-                           </li>
-                           <li class="skills-item">
-                              CSS (SASS/SCSS,BEM)
-                           </li>
-                           <li class="skills-item">
-                              JavaScript (Fundamentals, ES6+, DOM)
-                           </li>
-                           <li class="skills-item">
-                              Git/GitHub
-                           </li>
-                           <li class="skills-item">
-                              VSCode, Sublime Text, Replit
-                           </li>
-                        </ul>
-                     </nav>
-                  </section>
-               </aside>
-               <div class="main-content">
-                  <section class="main-about" id="about">
-                     <h2 class="main-title">About me</h2>
-                     <div class="yellow-line"></div>
-                     <div class="about-container">
-                        I am 33 years old, I work as a progect engineer on telecommunication in Belarusian Railway. My
-                        work is interesting, complex and responsible. But still, in any work there is monotony and I
-                        wanted to do something else. That&#39;s why I came to this course!
-                     </div>
-                     <h3>My personal and professional qualities:</h3>
-                     <div class="about-container">
-                        <ul>
-                           <li class="qualities-item">
-                              <p class="qualities-link">Sociability</p>
-                           </li>
-                           <li class="qualities-item">
-                              <p class="qualities-link">Stress resistance</p>
-                           </li>
-                           <li class="qualities-item">
-                              <p class="qualities-link">High efficiency</p>
-                           </li>
-                           <li class="qualities-item">
-                              <p class="qualities-link">Analytical thinking</p>
-                           </li>
-                           <li class="qualities-item">
-                              <p class="qualities-link">Desire for professional growth</p>
-                           </li>
-                        </ul>
-                     </div>
-                     <h3 id="languages">Languages:</h3>
-                     <div class="about-container">
-                        <ul>
-                           <li class="qualities-item">
-                              <p class="qualities-link">Russian - native speaker</p>
-                           </li>
-                           <li class="qualities-item">
-                              <p class="qualities-link">Belarusian - native speaker</p>
-                           </li>
-                           <li class="qualities-item">
-                              <p class="qualities-link">English - level A2 (B1 in process...)</p>
-                           </li>
-                        </ul>
-                     </div>
-                     <h3 id="project">Project:</h3>
-                     <div class="about-container">
-                        <ul>
-                           <li class="qualities-item">
-                              <a href="https://Tennis.irakruk.repl.co" class="qualities-link">Tennis:
-                                 https://Tennis.irakruk.repl.co</a>
-                           </li>
-                           <li class="qualities-item">
-                              <a href="https://ClockDom.irakruk.repl.co" class="qualities-link">Clock:
-                                 https://ClockDom.irakruk.repl.co</a>
-                           </li>
-                        </ul>
-                     </div>
-                  </section>
-                  <section class="main-code" id="code">
-                     <h1 class="main-title">Code</h1>
-                     <div class="yellow-line"></div>
-                     <div class="code-container">
-                        <code>
-                           class LocStorageClass {<br>
-                              constructor(_lsKeyName) {<br>
-                                 this.lsKeyName = _lsKeyName;<br>
-                                 this.storage = {};<br>
-                                 if (localStorage[_lsKeyName]) {<br>
-                                    this.storage = JSON.parse(localStorage[_lsKeyName]);<br>
-                                 }<br>
-                              }<br>
-                              addValue(key, value) {<br>
-                                 this.storage[key] = value;<br>
-                                 localStorage[this.lsKeyName] = JSON.stringify(this.storage);<br>
-                              }<br>
-                              getValue(key) {<br>
-                                 return this.storage[key];<br>
-                              }<br>
-                              deleteValue(key) {<br>
-                                 if (key in this.storage) {<br>
-                                    delete this.storage[key];<br>
-                                    localStorage[this.lsKeyName] = JSON.stringify(this.storage);<br>
-                                    return true;<br>
-                                 }<br>
-                                 return false;<br>
-                              }<br>
-                              getKey() {<br>
-                                 return Object.keys(this.storage);<br>
-                              }<br>
-                           }<br>
-                        </code>
-                     </div>
-                  </section>
-               </div>
-            </div>
-         </div>
-      </main>
-      <footer class="footer">
-         <div class="container">
-            <div class="footer-container">
-               <div class="footer-item">
-                  <a href="https://github.com/IrinaKruk" target="_blank" class="footer-image">
-                     <img src="assets/icons/github.svg" alt="github" class="footer-image">
-                  </a>
-               </div>
-               <div class="footer-item">
-                  <a href="https://rs.school/js-stage0/" target="_blank" class="footer-image">
-                     <img src="assets/icons/rs_school_js.svg" alt="rs-school" class="footer-image">
-                  </a>
-               </div>
-               <div class="footer-item">
-                  <p class="footer-text">
-                     Created <br>
-                     in 2022
-                  </p>
-               </div>
-            </div>
-         </div>
-      </footer>
-   </div>
--->
 
    <script src="index.js"></script>
 </body>
