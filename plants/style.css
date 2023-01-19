@@ -8,6 +8,10 @@ html, body {
    position: relative;
 }
 
+html {
+   scroll-behavior: smooth;
+}
+
 .wrapper {
    margin: 0 auto;
    overflow: hidden;
@@ -38,6 +42,7 @@ html, body {
 
 .logo{
    display: flex;
+   flex: 1;
 }
 
 .logo-image {
@@ -52,6 +57,10 @@ html, body {
    font-size: 16px;
    color: #010201;
    margin: 0;
+}
+
+.header-menu{
+height: 51px;
 }
 
 .nav-list{
@@ -80,6 +89,7 @@ ul{
    transition: 0.3s;
    cursor: pointer;
 }
+
 .nav-item:not(:last-child){
    padding-right: 46px;
 }
@@ -97,14 +107,10 @@ ul{
 }
 
 .leafs{
-   flex: 1;
    padding: 55px 0 69px 0;
-   width:450px;
-   height:410px;
 }
 
 .welcome-info{
-   flex: 1;
    padding: 98px 0 94px 128px;
 }
 
@@ -259,26 +265,32 @@ ul{
 
 .garden{
    background: url('assets/img/first.png') no-repeat;
+   background-size: auto;
 }
 
 .planting{
    background: url('assets/img/second.png') no-repeat;
+   background-size: auto;
 }
 
 .lawn-care{
    background: url('assets/img/third.png') no-repeat;
+   background-size: auto;
 }
 
 .plantingtwo{
    background: url('assets/img/fourth.png') no-repeat;
+   background-size: auto;
 }
 
 .garden-care{
    background: url('assets/img/fifth.png') no-repeat;
+   background-size: auto;
 }
 
 .plantingthree{
    background: url('assets/img/sixth.png') no-repeat;
+   background-size: auto;
 }
 
 .card-item{
@@ -570,4 +582,179 @@ ul{
 
 .socialmedia-content ul{
    margin: 0;
+}
+
+/* Стили для планшета */
+
+@media all and (max-width: 768px)
+{
+
+.container {
+   max-width: 768px;
+}
+
+.header-container{
+   padding: 0 50px;
+   margin: 33px 0;
+}
+
+.welcome-container{
+flex-direction: row-reverse;
+padding: 0 50px;
+font-size: 16px;
+}
+
+.leafs{
+   width: 280px;
+   height: 255px;
+   text-align: end;
+   padding-top:40px ;
+}
+
+.leafs img{
+   height: 100%;
+   width: auto;
+}
+
+.welcome-info {
+   padding: 40px 0 70px 0;
+}
+
+.grey {
+   font-size: 34.5px;
+   line-height: 50px;
+}
+
+.welcome-text {
+   line-height: 25px;
+   margin: 30px 0 34px 0;
+}
+
+.about-container {
+   flex-direction: column;
+   text-align: center;
+   padding: 40px 50px 92px 50px;
+}
+
+.about-info {
+   padding: 0 0 65px 0;
+}
+
+.green-info {
+   margin: 0;
+   font-size: 35px;
+   font-weight: 400;
+   line-height: 46px;
+   padding: 0 0 50px 0;
+}
+
+.about-text {
+text-align:start;
+}
+
+.houseplant{
+   text-align: center;
+   padding-bottom: 0px;
+}
+
+.houseplant img{
+   width: 250px;
+   height: 260px;
+}
+
+.service {
+   padding: 60px 50px 30px 50px;
+}
+
+.service-header {
+   flex-direction: column;
+   align-items: flex-start;
+}
+
+.service-title {
+   font-size: 35px;
+   line-height: 46px;
+   margin: 0;
+}
+
+.service-button {
+   padding: 40px 0;
+}
+
+.service-container {
+   padding-top: 0;
+}
+
+.service-card {
+   width: 280px;
+   height: 450px;
+   margin-bottom: 38px;
+}
+
+.service-card p{
+padding: 0 30px;
+}
+
+.prices-container {
+   display: flex;
+   justify-content: space-between;
+   padding: 40px 50px 88px 50px;
+}
+
+.price-content h2 {
+   font-size: 35px;
+   line-height: 42px;
+   padding: 0 0 55px 10px;
+}
+
+.black {
+   font-size: 25px;
+   line-height: 35px;
+   padding: 100px 0 30px 0;
+}
+
+.price-text img {
+   width: 150px;
+   height: 175px;
+   padding-top: 30px;
+}
+
+.contacts-container {
+   flex-direction: column-reverse;
+   justify-content: center;
+   padding: 0;
+}
+
+.contacts-contant {
+   align-items: center;
+}
+
+.contacts-contant h2{
+   padding: 40px 0 100px 0;
+}
+
+.contacts-item {
+   padding: 0;
+}
+
+.contacts-image {
+   background: url("assets/img/contact_woman.png") no-repeat;
+   background-size: cover;
+   width: 200px;
+   height: 250px;
+   margin: 250px 275px 0 295px;
+}
+
+.footer-container {
+   flex-direction: column;
+   padding: 30px 275px 10px 275px;
+}
+.footer-git{
+   height: 40px;
+}
+.rsschool {
+   padding-left: 0;
+   
+}
+
 }
