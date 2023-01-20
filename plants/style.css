@@ -94,6 +94,14 @@ ul{
    padding-right: 46px;
 }
 
+.hamb{
+display: none;
+}
+
+.popup{
+   display: none;
+}
+
 .welcome{
    background-color: #EDF2EC;
    font-family: 'Inter', sans-serif;
@@ -755,6 +763,149 @@ padding: 0 30px;
 .rsschool {
    padding-left: 0;
    
+}
+
+}
+
+/* Стили для мобильной версии */
+
+@media all and (max-width: 380px)
+{
+
+.container {
+   max-width: 380px;
+}
+
+.header-container{
+   padding: 0 15px 0 25px;
+   margin: 25px 0;
+}
+
+.nav-list{
+display: none;
+}
+
+.hamb{
+   display: flex;
+   align-items: center;
+}
+
+.bar{
+   display: block;
+   width: 40px;
+   height: 2px;
+   margin: 6px auto;
+   background-color: rgba(113, 113, 113, 1);
+   transition: 0.2s;
+}
+
+.hamb-field{
+   padding: 10px 10px;
+   cursor:pointer;
+}
+
+.hamb-field .active .bar:nth-child(2){
+opacity: 0;
+}
+
+.hamb-field .active .bar:nth-child(1){
+   transform: translate(9px) rotate(45deg);
+}
+
+.hamb-field .active .bar:nth-child(4){
+   transform: translate(-9px) rotate(-45deg);
+}
+
+.leafs{
+   display: none;
+}
+
+.welcome-container{
+   padding: 0 25px;
+}
+
+.welcome-info {
+   padding: 25px 0 28px 0;
+}
+
+.grey {
+   font-size: 25px;
+   line-height: 35px;
+}
+
+.welcome-text {
+   margin: 20px 0 22px 0;
+}
+
+.welcome-button{
+   font-size: 10px;
+   padding: 10px 18px;
+}
+
+.about-container {
+   padding: 30px 25px;
+}
+
+.green-info {
+   font-size: 25px;
+   line-height: 33px;
+   padding-bottom: 10px;
+}
+
+.about-info{
+   padding: 0;
+}
+
+.about-text{
+   font-size: 15px;
+   line-height: 25px;
+}
+
+.houseplant img{
+   width: 150px;
+   height: 150px;
+}
+
+.service {
+   padding: 30px 25px 0px 25px;
+}
+
+.service-title{
+   font-size: 25px;
+line-height: 33px;
+}
+
+.service-button{
+   flex-wrap: wrap;
+   justify-content:flex-start;
+   padding: 35px 0 40px 0;
+}
+
+.service-button-items {
+   padding-right: 10px;
+}
+
+.button-service {
+   width: 120px;
+   height: 35px;
+   font-size: 15px;
+   line-height: 20px;
+}
+
+.service-button-items:nth-child(3){
+   padding-top: 10px;
+}
+
+.service-container {
+   justify-content: center;
+}
+
+.service-card:not(:last-child) {
+   margin-bottom: 33px;
+}
+
+.service-card:last-child {
+   margin-bottom: 23px;
 }
 
 }
