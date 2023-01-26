@@ -13,8 +13,8 @@ html {
 }
 
 .wrapper {
+   max-width: 1440px;
    margin: 0 auto;
-   overflow: hidden;
    display: flex;
    flex-direction: column;
 }
@@ -25,11 +25,7 @@ html {
    font-family: 'Inika', serif;
 }
 
-.container{
-   max-width: 1440px;
-   margin: 0 auto;
-   background-color: #EDF2EC;
-}
+
 
 .header-container{
    display: flex;
@@ -109,17 +105,23 @@ display: none;
 
 .welcome-container{
    display: flex;
-   justify-content:center;
+   justify-content:space-between;
    padding: 0 110px;
    font-size: 20px;
 }
 
 .leafs{
-   padding: 55px 0 69px 0;
+   padding: 55px 0 50px 0;
+}
+
+.leafs img{
+   display: block;
+   width: 100%;
 }
 
 .welcome-info{
-   padding: 98px 0 94px 128px;
+   flex: 0 1 45%;
+   padding: 98px 0 74px 210px;
 }
 
 .grey{
@@ -162,6 +164,7 @@ display: none;
    justify-content:space-between;
    padding:93px 110px 19px 110px;
    font-size: 20px;
+   flex-wrap: wrap;
 }
 
 .houseplant{
@@ -203,6 +206,7 @@ display: none;
 
 .service-header{
    display: flex;
+   flex-wrap: wrap;
 }
 
 .service-title{
@@ -216,6 +220,7 @@ display: none;
 }
 
 .service{
+   background-color: #EDF2EC;
    padding: 38px 110px 68px 110px;
 }
 
@@ -224,6 +229,7 @@ display: none;
    justify-content: center;
    align-items: center;
    padding-left: 142px;
+   flex-wrap: wrap;
 }
 
 .button-service{
@@ -252,6 +258,7 @@ display: none;
 
 .service-button-items {
    padding-right: 38px;
+   margin: 10px 0;
 }
 
 .service-container{
@@ -397,6 +404,7 @@ padding: 10px 0 12px 0;
    display: flex;
    flex-direction: column;
    align-items: flex-end;
+   flex: 0 1 452px;
 }
 
 .price-text img{
@@ -406,7 +414,7 @@ padding-top: 40px;
 }
 
 .black{
-   width: 455px;
+   
    margin: 0;
    font-family: 'Inter';
    font-style: normal;
@@ -442,40 +450,53 @@ padding-top: 40px;
    background-color:rgba(224, 103, 51, 1);
 }
 
+.contacts{
+background-color: #EDF2EC;
+}
+
 .contacts-container{
    display: flex;
-   justify-content: flex-start;
+   justify-content: space-between;
    padding:53px 110px 0 110px;
    font-size: 20px;
+   height: 100%;
+}
+.contacts__img img {
+   display: block;
+   width: 100%;
 }
 
 .contacts-image{
-width: 400px;
-height: 497px;
-background: url("assets/img/contact_woman.png") no-repeat;
-background-size: cover;
+   flex: 0 0 32.73%;
+   margin: 0;
+   padding: 0;
+}
+
+.contacts-image img{
+display: block;
+width: 100%;
 }
 
 .contacts-contant{
-display: flex;
-flex-direction: column;
+   display: flex;
+   flex-direction: column;
 }
 
-.contacts-contant h2{
-   align-items: flex-start;
-   margin: 0;
+.contacts-container h2{
+   align-items: center;
+   margin: 8px 0 0 0;
    font-family: 'Inika';
    font-style: normal;
    font-weight: 700;
    font-size: 40px;
    line-height: 52px;
    color: #499A18;
-   padding: 7px 0 0 113px;
+   flex: 0 0 19%;
+   text-align: end;
 }
 
 .contacts-item{
-   padding: 33px 0 0 370px;
-   
+   margin: 95px 0 0 0;
 }
 
 .item{
@@ -595,11 +616,42 @@ ul{
    margin: 0;
 }
 
+@media all and (max-width: 980px)
+{
+.contacts-container{
+   flex-direction: column;
+   justify-content: center;
+}
+
+.contacts-image {
+   order: 3;
+   width: 27%;
+   align-self: center;
+}
+
+.contacts-container h2  {
+   order: 1;
+   text-align: center;
+}
+
+.contacts-contant {
+order: 2;
+}
+
+.contacts-item{
+   margin: 100px 0 250px 0;
+}
+
+.item{
+   margin: 0 auto;
+}
+}
 /* Стили для планшета */
 
 @media all and (max-width: 768px)
 {
 
+   
 .container {
    max-width: 768px;
 }
@@ -616,18 +668,13 @@ font-size: 16px;
 }
 
 .leafs{
-   width: 280px;
-   height: 255px;
+   max-width: 280px;
    text-align: end;
    padding-top:40px ;
 }
 
-.leafs img{
-   height: 100%;
-   width: auto;
-}
-
 .welcome-info {
+   flex: 0 1 52%;
    padding: 40px 0 70px 0;
 }
 
@@ -692,6 +739,10 @@ text-align:start;
    padding: 40px 0;
 }
 
+.service-button-items {
+   margin: 0;
+}
+
 .service-container {
    padding-top: 0;
 }
@@ -718,6 +769,31 @@ padding: 0 30px;
    padding: 0 0 55px 10px;
 }
 
+.garden{
+   background: url('assets/img/first768.png') no-repeat;
+}
+
+.planting{
+   background: url('assets/img/second768.png') no-repeat;
+}
+
+.lawn-care{
+   background: url('assets/img/third768.png') no-repeat;
+}
+
+.plantingtwo{
+   background: url('assets/img/fourth768.png') no-repeat;
+}
+
+.garden-care{
+   background: url('assets/img/fifth768.png') no-repeat;
+   background-size: auto;
+}
+
+.plantingthree{
+   background: url('assets/img/sixth768.png') no-repeat;
+}
+
 .black {
    width: auto;
    font-size: 25px;
@@ -732,8 +808,6 @@ padding: 0 30px;
 }
 
 .contacts-container {
-   flex-direction: column-reverse;
-   justify-content: center;
    padding: 0;
 }
 
@@ -741,8 +815,8 @@ padding: 0 30px;
    align-items: center;
 }
 
-.contacts-contant h2{
-   padding: 40px 0 100px 0;
+.contacts-container h2{
+   padding: 40px 0 0 0;
 }
 
 .contacts-item {
@@ -750,11 +824,11 @@ padding: 0 30px;
 }
 
 .contacts-image {
-   background: url("assets/img/contact_woman.png") no-repeat;
-   background-size: cover;
-   width: 200px;
-   height: 250px;
-   margin: 250px 275px 0 295px;
+   margin: 0;
+}
+
+.contacts-image img {
+   margin-left: 10px;
 }
 
 .footer-container {
@@ -771,6 +845,15 @@ padding: 0 30px;
    
 }
 
+}
+@media all and (max-width: 630px)
+{
+.prices-container {
+   display: flex;
+   flex-direction: column;
+   justify-content: flex-start;
+   align-items: center;
+}
 }
 
 /* Стили для мобильной версии */
@@ -831,7 +914,7 @@ opacity: 0;
    top: 100px;
    left: -100%;
    width: 100%;
-   height: 100%;
+   height: 300px;
    background-color: #EDF2EC;
    z-index: 100;
    display: flex;
@@ -873,10 +956,13 @@ opacity: 0;
 }
 
 .welcome-container{
+   justify-content: center;
+   align-items: center;
    padding: 0 25px;
 }
 
 .welcome-info {
+   flex: 0 1 100%;
    padding: 25px 0 28px 0;
 }
 
@@ -901,7 +987,7 @@ opacity: 0;
 .green-info {
    font-size: 25px;
    line-height: 33px;
-   padding-bottom: 10px;
+   padding-bottom: 15px;
 }
 
 .about-info{
@@ -991,6 +1077,7 @@ line-height: 33px;
 }
 
 .price-text {
+   flex:auto;
    align-items: center;
 }
 
@@ -1011,16 +1098,44 @@ line-height: 33px;
    display: none;
 }
 
-.contacts-image {
-   width: 100px;
-   height: 125px;
-   margin: 130px 140px 0 140px;
+.garden{
+   background: url('assets/img/first768.png') no-repeat;
 }
 
-.contacts-contant h2 {
+.planting{
+   background: url('assets/img/second768.png') no-repeat;
+}
+
+.lawn-care{
+   background: url('assets/img/third768.png') no-repeat;
+}
+
+.plantingtwo{
+   background: url('assets/img/fourth768.png') no-repeat;
+}
+
+.garden-care{
+   background: url('assets/img/fifth768.png') no-repeat;
+   background-size: auto;
+}
+
+.plantingthree{
+   background: url('assets/img/sixth768.png') no-repeat;
+}
+
+.contacts-image img {
+   margin-left: -5px;
+}
+
+.contacts-container h2 {
    padding: 25px 0 80px 0;
    font-size: 25px;
    line-height: 33px;
+}
+
+.contacts-item {
+   margin-top:0;
+   margin-bottom: 130px;
 }
 
 .item {
