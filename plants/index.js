@@ -1,30 +1,38 @@
 const hamb = document.getElementById('hamb');
 const popup = document.getElementById('popup');
 const menu = document.getElementById('menu');
-const body = document.body;
+const body = document.querySelector('body');
 
-hamb.addEventListener("click", hambHandler);
+if (hamb && popup) {
+   hamb.addEventListener('click', function (e) {
+      document.body.classList.toggle('lock');
+      hamb.classList.toggle('active');
+      popup.classList.toggle('open');
+      renderPopup();
 
-function hambHandler(e) {
-   e.preventDefault();
-   popup.classList.toggle("open");
-   hamb.classList.toggle("active");
-   body.classList.toggle("lock");
-   renderPopup();
-};
+      e.stopPropagation();
+      body.addEventListener("click", (event) => {
+         if (!event.target.closest("popup")) {
+            document.body.classList.remove('lock');
+            hamb.classList.remove('active');
+            popup.classList.remove('open');
+         };
+      });
+   });
+}
+
+popup.querySelectorAll('.nav-item').forEach(item => {
+   item.addEventListener('click', () => {
+      document.body.classList.remove('lock');
+      hamb.classList.remove('active');
+      popup.classList.remove('open');
+   });
+});
 
 function renderPopup() {
    popup.appendChild(menu);
 };
 
-menu.addEventListener("click", closePopup);
-
-function closePopup(e) {
-   e.preventDefault();
-   popup.classList.toggle("open");
-   body.classList.toggle("lock");
-   hamb.classList.toggle("active");
-}
 
 
 const menuLinks = document.querySelectorAll('.nav-link[data-goto]');
