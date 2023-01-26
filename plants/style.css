@@ -856,6 +856,12 @@ padding: 0 30px;
 }
 }
 
+@media all and (max-width: 460px)
+{
+.item {
+   width: 300px;
+}
+}
 /* Стили для мобильной версии */
 
 @media all and (max-width: 380px)
