@@ -1,3 +1,5 @@
+//открытие и закрытие burger-menu
+
 const hamb = document.getElementById('hamb');
 const popup = document.getElementById('popup');
 const menu = document.getElementById('menu');
@@ -33,7 +35,7 @@ function renderPopup() {
    popup.appendChild(menu);
 };
 
-
+//плавный переход по ссылкам
 
 const menuLinks = document.querySelectorAll('.nav-link[data-goto]');
 
@@ -57,5 +59,33 @@ if (menuLinks.length > 0) {
    }
 }
 
+//price accord
 
-console.log('Вёрстка соответствует макету. Ширина экрана 768px +24' + '\n' + 'блок <header> +2' + '\n' + 'секция welcome +3' + '\n' + 'секция about +4' + '\n' + 'секция service +4' + '\n' + 'секция prices +4' + '\n' + 'секция contacts +4' + '\n' + 'блок < footer > +3' + '\n' + 'Вёрстка соответствует макету.Ширина экрана 380px + 24' + '\n' + 'блок < header > +2' + '\n' + 'секция welcome + 3' + '\n' + 'секция about + 4' + '\n' + 'секция service + 4' + '\n' + 'секция prices + 4' + '\n' + 'секция contacts + 4' + '\n' + 'блок < footer > +3' + '\n' + 'Ни на одном из разрешений до 320px включительно не появляется горизонтальная полоса прокрутки.Весь контент страницы при этом сохраняется: не обрезается и не удаляется + 15' + '\n' + 'нет полосы прокрутки при ширине страницы от 1440рх до 380px + 7' + '\n' + 'нет полосы прокрутки при ширине страницы от 380px до 320рх + 8' + '\n' + 'На ширине экрана 380рх и меньше реализовано адаптивное меню + 22(Допускается появление адаптивного меня на ширине более 380, но не допускается на ширине более 770px)' + '\n' + 'при ширине страницы 380рх панель навигации скрывается, появляется бургер - иконка + 2 ' + '\n' + ' при нажатии на бургер - иконку плавно появляется адаптивное меню + 4' + '\n' + 'адаптивное меню соответствует цветовой схеме макета + 4 ' + '\n' + 'при нажатии на крестик адаптивное меню плавно скрывается уезжая за экран + 4 ' + '\n' + 'ссылки в адаптивном меню работают, обеспечивая плавную прокрутку по якорям + 4 ' + '\n' + 'при клике по ссылке в адаптивном меню адаптивное меню плавно скрывается, также скрытие меню происходит если сделать клик вне данного окна + 4');
+const drop_wrapper = document.querySelector('.price-title');
+let open_dropup = null;
+
+drop_wrapper.addEventListener('click', (event) => {
+
+   if (event.target === drop_wrapper) {
+      return;
+   }
+
+   const close_dropup = event.target.closest('.price-item__container');
+   const drop_button = event.target.closest('.price-item');
+
+   if (open_dropup === null) {
+      open_dropup = close_dropup;
+      close_dropup.classList.add('select');
+   } else {
+      if (close_dropup === open_dropup && drop_button) {
+         close_dropup.classList.remove('select');
+         open_dropup = null;
+      } else if (close_dropup !== open_dropup) {
+         open_dropup.classList.remove('select');
+         close_dropup.classList.add('select');
+         open_dropup = close_dropup;
+      }
+   }
+});
+
+console.log();
