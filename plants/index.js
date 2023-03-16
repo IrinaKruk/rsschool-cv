@@ -88,4 +88,9 @@ drop_wrapper.addEventListener('click', (event) => {
    }
 });
 
+// blur
+
+
+
+
 console.log();
